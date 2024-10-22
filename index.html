@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@SchoolBank</title>
+    <style>
+        body {
+            background-color: #ff8c00; /* Dark orange */
+            font-family: monospace;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+        .form-container {
+            margin: 20px auto;
+            width: 50%;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input[type="text"], input[type="password"], input[type="submit"] {
+            font-family: monospace;
+            padding: 10px;
+            margin: 10px;
+            font-size: 1.1em;
+            width: 80%;
+        }
+        input[type="submit"] {
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .signup-section, .login-section, .teacher-section {
+            margin-top: 30px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to @SchoolBank</h1>
+
+    <!-- Sign-up and Login forms for students -->
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Enter your username" required><br>
+            <input type="password" placeholder="Create a password" required><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <div class="form-container login-section">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Username" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <!-- Teacher sign-up and login forms -->
+    <div class="form-container teacher-section">
+        <h2>Teacher Sign Up</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Teacher Username" required><br>
+            <input type="password" placeholder="Create Teacher Password" required><br>
+            <input type="submit" value="Teacher Sign Up">
+        </form>
+    </div>
+
+    <div class="form-container">
+        <h2>Teacher Login</h2>
+        <form action="#" method="post">
+            <input type="text" placeholder="Teacher Username" required><br>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="Teacher Login">
+        </form>
+    </div>
+
+    <!-- Image container for school-related images -->
+    <div class="image-container">
+        <img src="book_pencils.jpg" alt="Books and Pencils">
+        <img src="healthy_snacks.jpg" alt="Healthy Snacks">
+        <img src="unwanted_items.jpg" alt="Unwanted Items (e-bike)">
+    </div>
+
+</body>
+</html>
